@@ -1,65 +1,99 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #fff;
+  font-family: 'Segoe UI', 'Arial', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: linear-gradient(135deg, #f8fafc 0%, #e9ecef 100%);
   color: #222;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
 }
 nav {
-  background: #f4f4f4;
-  padding: 1em;
+  background: #222;
+  padding: 1.2em 0;
   text-align: center;
-  font-size: 1em;
+  font-size: 1.05em;
+  letter-spacing: 0.02em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 nav a {
-  color: #222;
+  color: #f8fafc;
   text-decoration: none;
-  margin: 0 0.5em;
+  margin: 0 0.7em;
+  padding: 0.2em 0.5em;
+  border-radius: 2px;
+  transition: background 0.2s, color 0.2s;
 }
 nav a:hover {
-  text-decoration: underline;
+  background: #f8fafc;
+  color: #222;
 }
 main {
-  max-width: 700px;
-  margin: 2em auto;
-  padding: 1em;
-  background: #fafafa;
-  border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  max-width: 720px;
+  margin: 2.5em auto;
+  padding: 2em 2em 1.5em 2em;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(34,34,34,0.07);
 }
-h1, h2, h3 {
+main h1 {
+  font-size: 2.2em;
+  font-weight: 700;
+  margin-top: 0.5em;
+  margin-bottom: 0.7em;
+  letter-spacing: 0.01em;
+}
+main h2 {
+  font-size: 1.4em;
   font-weight: 600;
   margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+main h3 {
+  font-size: 1.15em;
+  font-weight: 500;
+  margin-top: 1.2em;
+  margin-bottom: 0.3em;
 }
 footer {
   text-align: center;
   padding: 2em 0 1em 0;
-  font-size: 0.9em;
-  color: #888;
-  background: #f4f4f4;
+  font-size: 0.95em;
+  color: #555;
+  background: #222;
   margin-top: 2em;
+  letter-spacing: 0.01em;
 }
 form label {
   display: block;
-  margin-top: 1em;
+  margin-top: 1.2em;
+  font-weight: 500;
+  color: #222;
 }
 form input, form textarea {
   width: 100%;
-  padding: 0.5em;
+  padding: 0.7em;
   margin-top: 0.5em;
-  border: 1px solid #ccc;
-  border-radius: 2px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
   font-size: 1em;
+  background: #f8fafc;
+  transition: border 0.2s;
+}
+form input:focus, form textarea:focus {
+  border-color: #222;
+  outline: none;
 }
 form button {
-  margin-top: 1em;
-  padding: 0.7em 2em;
+  margin-top: 1.2em;
+  padding: 0.8em 2.2em;
   background: #222;
   color: #fff;
   border: none;
-  border-radius: 2px;
+  border-radius: 4px;
   cursor: pointer;
   font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: background 0.2s;
 }
 form button:hover {
   background: #444;
