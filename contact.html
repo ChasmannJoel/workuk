@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Info Works UK Ltd</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="phone.js"></script>
+  <script>
+    function setPhone() {
+      document.getElementById('phone').textContent = UK_PHONE_NUMBER;
+    }
+    window.onload = setPhone;
+  </script>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="about.html">About Us</a> |
+    <a href="services.html">Services</a> |
+    <a href="contact.html">Contact</a> |
+    <a href="terms.html">Terms and Conditions</a> |
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="cookies.html">Cookie Policy</a> |
+    <a href="faq.html">FAQ</a> |
+    <a href="legal.html">Legal Notice</a>
+  </nav>
+  <main>
+    <h1>Contact Us</h1>
+    <section>
+      <h2>Business Address</h2>
+      <p>123 Tech Lane, London, Greater London, SW1A 1AA, United Kingdom</p>
+    </section>
+    <section>
+      <h2>Phone</h2>
+      <p id="phone"></p>
+    </section>
+    <section>
+      <h2>Email</h2>
+      <p><a href="mailto:info@infoworksuk.co.uk">info@infoworksuk.co.uk</a></p>
+    </section>
+    <section>
+      <h2>Contact Form</h2>
+      <form method="post" action="#">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" required></textarea><br>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+    <section>
+      <h2>Business Hours</h2>
+      <p>Monday to Friday: 09:00 – 18:00<br>Saturday & Sunday: Closed</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Info Works UK Ltd. All rights reserved.</p>
+  </footer>
+</body>
+</html>
